@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family:'filxgirl' ;
+    src: url('fonts/Filxgirl.ttf') format(truetype);
+    
+    /*
+    Tipos de format()
+    - opentype(otf)
+    - truetype(ttf)
+    -embedded-opentype
+    -truetype-aat (Apple advanced typography)
+    -svg
+    */
+}
+@font-face {
+    font-family:'valentine';
+    src: url(fonts/Valentine.otf) format('opentype'), url('fonts/Valentine.ttf') format('truetype');
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+
+}
+
+body {
+    background-image: linear-gradient(to right, #9FC131, #DBF227);
+   
+}
+main{
+    background-color: #D6D58E;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #042940;
+    width: 1000px;
+    padding: 10px;
+    margin:auto;
+}
+h1{
+    color: #042940;
+    text-align: center;
+    text-shadow: 1px 1px 3px #041d2cc4;
+    font: italic bold 2.5em  "valentine", serif; 
+}
+h2 {
+    color: #005C53;
+    font: italic bolder 3em 'filxgirl', sans-serif;
+    
+}
+p{
+    text-align: justify;
+    font-size: 15px;
+}
+ /*Medidas das Fontes
+    medidas absolutas
+    cm, mm, in, px, pt, pc
+    medidas relativas
+    em, ex, rem, vw, vh, %
+
+    16px geralmente e um 1em
+    */
+    /* shorthand font
+    - font-style -> font-weight -> font-size - font-family */

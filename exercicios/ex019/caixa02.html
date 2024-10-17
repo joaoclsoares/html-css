@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: burlywood;
+            padding: 3px;
+            box-shadow: 3px 5px 7px 1px rgba(0, 0, 0, 0.438);
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 16px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(124, 119, 119);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bolo{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        
+        }
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho onde fica os menus-->
+      <h1>Meu site</h1> 
+      <nav> <!--Usado mais pra menus-->
+        <a href="#">Arquivo</a>
+        <a href="#">Editar</a>
+        <a href="#">Inserir</a>
+        <a href="#">Dados</a>
+        <a href="#">Backup</a>
+      </nav>  
+    </header>
+    <main> <!--corpo do site-->
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Artigo so HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reiciendis nostrum sed alias aliquid repudiandae quisquam, rem similique quod odio quas hic iste dolorum soluta, molestias aspernatur autem repellendus pariatur.</p>
+                <aside>
+                    <p>Artigo escrito por João</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>  
+    </main>
+    <footer><!--rodape do site-->
+        <p>Desenvolvido por João Crisóstomo.</p>
+    </footer>
+    <div id="bolo">
+
+    </div>
+</body>
+</html>

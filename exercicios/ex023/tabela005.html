@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque{
+            background-color: bisque;
+        }
+        col.cnome{
+
+            background-color: bisque;
+        }
+        col.csexo{
+            background-color: antiquewhite;
+
+        }
+        col.cgrup{
+            background-color: rgb(173, 115, 28);
+        }
+        col.cprof{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrup" span="3">
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Frederico</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Analista sistema</td>
+        </tr>
+        <tr>
+            <td>José Alves</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Engenheiro Civil</td>
+        </tr>
+        <tr>
+            <td>Patricia</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Kleber Alves</td>
+            <td>M</td>
+            <td>55</td>
+            <td>Administrador de Empresas</td>
+        </tr>
+        <tr>
+            <td>Jonata Luiz</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Estoquista</td>
+        </tr>
+        <tr>
+            <td>Ana Paula</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Analista do RH</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

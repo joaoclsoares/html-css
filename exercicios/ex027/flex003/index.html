@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body, html{
+            background-color: rgb(255, 241, 216);
+        }
+        header{
+            margin: 20px;
+        }
+        header > h1{
+            text-align: center;
+            color: rgba(236, 14, 14, 0.884);
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+        }
+        main{
+            width: 80vw;
+            margin: auto;
+            background-color:bisque;
+
+        }
+        main > nav{
+            display: block;
+        }
+        main > nav > ul{
+            display: inline-block;
+            list-style-type: none;
+            
+        }
+        main > nav > ul > li{
+            display: inline-block;
+        }
+        main > nav > ul > li > a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(87, 86, 86);
+            color: white;
+            border-top: 2px solid rgb(156, 155, 155);
+
+        
+        }
+        main > nav > ul > li > a:hover{
+            background-color: rgb(214, 203, 203);
+        }
+        main > div.conteiner{
+            background-color: lightsalmon;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            
+         
+            
+        }
+        div.item{
+            background-color: lightskyblue;
+            
+            
+            text-align: left;
+            padding: 10px;
+        }
+        div.item > {
+
+        }
+        input{
+            border-radius: 5px;
+            padding: 3px;
+            color: blue;
+            border-color: rgba(34, 34, 231, 0.801);
+            text-align: center;
+            
+            padding: 5px 10px;
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+    <main>
+        
+        <nav class="menu">
+                    <ul>
+                        <li><a href="#">Cadastro</a></li>
+                        <li><a href="#">relatorio</a></li>
+                        <li><a href="#">ajuda</a></li>
+                    </ul>
+        </nav>
+    <form action="cadatro.php" method="post"
+    autocomplete="on">
+        
+         <div class="conteiner">
+             <div class="item">
+                 <label for="inome">Nome:</label>
+                 <input type="text" name="nome" id="inome">
+             </div>
+            <div class="item">
+             <label for="iendereco">Endereço:</label>
+             <input type="text" name="endereco" id="iendereco">
+            </div>
+            <div class="item">
+             <label for="ibairro">Bairro:</label>
+             <input type="text" name="bairro" id="ibairro">
+            </div>
+            <div class="item">
+             <label for="itelefone">Telefone:</label>
+             <input type="tel" name="telefone" id="itelefone">
+            </div>
+            </div>
+         <div class="conteiner">
+             <div class="item">
+                 <label for="iemail">E-mail:</label>
+                 <input type="email" name="email" id="iemail">
+             </div>
+            <div class="item">
+             <label for="inascimento">Data de Nascimento:</label>
+             <input type="date" name="nascimento" id="inascimento">
+            </div>
+            <div class="item">
+             <label for="itrabalho">Trabalho:</label>
+             <input type="text" name="trabalho" id="itrabalho">
+            </div>
+            <div class="item">
+             <label for="isituacao">Situação:</label>
+             <input type="text" name="situalao" id="isituacao">
+            </div>
+            </div>
+        <div class="conteiner">
+            <div class="item">
+                <input type="submit" value="enviar">
+                <input type="reset" value="apagar">
+            </div>
+        </div>
+    </form>
+    </main>
+
+        
+</body>
+</html>
